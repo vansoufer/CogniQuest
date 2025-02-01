@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { marked } from 'marked';
+import { marked } from '@/lib/markdown';  // Importar o marked configurado
 
 interface Tab {
   id: 'aula' | 'links' | 'exercicios';  // Restringindo os IDs possíveis
