@@ -11,8 +11,10 @@ interface HeaderProps {
 export default function Header({ showBackButton = false, isLoading = false }: HeaderProps) {
   return (
     <>
-      <header className="flex items-center justify-center p-[20px] rounded-lg bg-[#080c0e] w-full mb-10">
+      <header className="flex items-center justify-center p-[1px]  rounded-lg  bg-gradient-to-r from-[#5f0dff] via-[#5f0dff] to-[#d58b05] w-full mb-10">
+       <div className=' h-[100%] w-full bg-black/95 rounded-lg flex items-center justify-center p-[20px]'>
         {showBackButton && (
+
           <Link href="/" className="text-white hover:text-gray-300 transition-colors">
             <FontAwesomeIcon icon={faArrowLeft} className="mr-2" />
             <span className="hidden sm:inline">Voltar</span>
@@ -36,6 +38,7 @@ export default function Header({ showBackButton = false, isLoading = false }: He
           </h1>
         </Link>
         {showBackButton && <div className="w-[24px]" />}
+        </div>
       </header>
     </>
   );

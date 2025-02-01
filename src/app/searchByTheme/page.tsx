@@ -56,7 +56,7 @@ export default function SearchByTheme() {
       
       <main className="max-w-4xl mx-auto space-y-8">
         {/* Seção de Input */}
-        <section className="bg-black/20 rounded-lg p-6 space-y-6">
+        <section className="bg-[#080c0e] rounded-lg p-6 space-y-6">
           <InputButton
             value={inputText}
             onChange={setInputText}
@@ -80,7 +80,7 @@ export default function SearchByTheme() {
 
         {/* Seção de Resultados */}
         {(isLoading || results.aula || results.links || results.exercicios) && (
-          <section className="bg-black/20 rounded-lg p-6">
+          <section className="bg-[#080c0e] rounded-lg p-6">
             {isLoading ? (
               <div className="space-y-6">
                 <LoadingSpinner />
