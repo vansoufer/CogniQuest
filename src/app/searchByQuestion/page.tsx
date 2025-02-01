@@ -10,6 +10,7 @@ import { processText, processImage } from '@/lib/gemini';
 import type { SearchResult } from '@/types';
 import LoadingSpinner from '../components/LoadingSpinner';
 import SkeletonNavTab from '../components/SkeletonNavTab';
+import Footer from '../components/Footer';
 
 export default function SearchByQuestion() {
   const [inputText, setInputText] = useState('');
@@ -174,6 +175,8 @@ export default function SearchByQuestion() {
           </section>
         )}
       </main>
+      <Footer />
     </div>
   );
+
 } 

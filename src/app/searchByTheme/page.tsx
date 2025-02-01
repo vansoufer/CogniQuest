@@ -10,6 +10,7 @@ import { processTheme } from '@/lib/gemini';
 import type { ThemeResult } from '@/types';
 import LoadingSpinner from '../components/LoadingSpinner';
 import SkeletonNavTab from '../components/SkeletonNavTab';
+import Footer from '../components/Footer';
 
 export default function SearchByTheme() {
   const [inputText, setInputText] = useState('');
@@ -93,7 +94,7 @@ export default function SearchByTheme() {
           </section>
         )}
       </main>
-
+      <Footer />
     </div>
   );
 } 

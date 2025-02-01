@@ -1,5 +1,6 @@
 'use client';
 
+import Footer from './components/Footer';
 import Header from './components/Header';
 import NavButton from './components/NavButton';
 import Image from 'next/image';
@@ -39,6 +40,7 @@ export default function Home() {
           </NavButton>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
