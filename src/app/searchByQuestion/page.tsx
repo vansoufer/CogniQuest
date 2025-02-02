@@ -129,13 +129,16 @@ export default function SearchByQuestion() {
               Enviar foto
             </ActionButton>
             
-            <ActionButton
-              icon={faPaste}
-              onClick={handleClipboardPaste}
-              disabled={isLoading || showOtherQuestion}
-            >
-              Enviar print
-            </ActionButton>
+            {/* Ocultar em dispositivos móveis */}
+            <div className="hidden md:block">
+              <ActionButton
+                icon={faPaste}
+                onClick={handleClipboardPaste}
+                disabled={isLoading || showOtherQuestion}
+              >
+                Enviar print
+              </ActionButton>
+            </div>
 
             {showOtherQuestion && (
               <ActionButton
