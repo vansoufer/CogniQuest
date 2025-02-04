@@ -7,6 +7,7 @@ interface InputButtonProps {
   onSubmit: () => void;
   placeholder?: string;
   disabled?: boolean;
+  ariaLabel?: string;
 }
 
 export default function InputButton({
@@ -14,7 +15,8 @@ export default function InputButton({
   onChange,
   onSubmit,
   placeholder = 'Digite aqui...',
-  disabled = false
+  disabled = false,
+  ariaLabel
 }: InputButtonProps) {
   const handleKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
@@ -30,6 +32,7 @@ export default function InputButton({
         onChange={(e) => onChange(e.target.value)}
         onKeyPress={handleKeyPress}
         placeholder={placeholder}
+        aria-label={ariaLabel}
         disabled={disabled}
         className="w-full h-auto min-h-[60px] max-h-[200px] p-4 pr-12 rounded-lg 
           bg-[#19242b] text-white placeholder-gray-300 
@@ -42,9 +45,11 @@ export default function InputButton({
       <button
         onClick={onSubmit}
         disabled={disabled || !value.trim()}
+        aria-label='Enviar'
         className=" bottom-2 p-[10px] rounded-full text-xl
           text-white transition-all hover:scale-105 disabled:opacity-50"
       >
+
         <FontAwesomeIcon icon={faPaperPlane} />
       </button>
     </div>

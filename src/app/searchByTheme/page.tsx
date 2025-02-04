@@ -59,6 +59,7 @@ export default function SearchByTheme() {
         <section className="bg-[#080c0e] rounded-lg p-6 space-y-6">
           <InputButton
             value={inputText}
+            ariaLabel='Digite o tema que deseja estudar'
             onChange={setInputText}
             onSubmit={handleTextSubmit}
             placeholder="Digite o tema que deseja estudar..."
@@ -71,6 +72,8 @@ export default function SearchByTheme() {
                 icon={faRedo}
                 onClick={handleNewQuestion}
                 disabled={isLoading}
+                ariaLabel='Pesquisar outro Tema'
+
               >
                 Outro Tema
               </ActionButton>

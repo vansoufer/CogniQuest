@@ -113,6 +113,7 @@ export default function SearchByQuestion() {
             value={inputText}
             onChange={setInputText}
             onSubmit={handleTextSubmit}
+            ariaLabel='Digite sua questão aqui'
             placeholder="Digite sua questão aqui..."
             disabled={isLoading || showOtherQuestion}
           />
@@ -125,9 +126,11 @@ export default function SearchByQuestion() {
               icon={faUpload}
               onClick={() => document.getElementById('fileInput')?.click()}
               disabled={isLoading || showOtherQuestion}
+              ariaLabel='Enviar foto'
             >
               Enviar foto
             </ActionButton>
+
             
             {/* Ocultar em dispositivos móveis */}
             <div className="hidden md:block">
@@ -135,6 +138,7 @@ export default function SearchByQuestion() {
                 icon={faPaste}
                 onClick={handleClipboardPaste}
                 disabled={isLoading || showOtherQuestion}
+                ariaLabel='Enviar print'
               >
                 Enviar print
               </ActionButton>
@@ -145,6 +149,7 @@ export default function SearchByQuestion() {
                 icon={faRedo}
                 onClick={handleNewQuestion}
                 disabled={isLoading}
+                ariaLabel='Outra Questão'
               >
                 Outra Questão
               </ActionButton>

@@ -8,6 +8,7 @@ interface ActionButtonProps {
   onClick?: () => void;
   className?: string;
   disabled?: boolean;
+  ariaLabel?: string;
 }
 
 export default function ActionButton({ 
@@ -15,7 +16,8 @@ export default function ActionButton({
   children, 
   onClick, 
   className = '',
-  disabled = false 
+  disabled = false,
+  ariaLabel
 }: ActionButtonProps) {
   const [hydrated, setHydrated] = useState(false);
 
@@ -27,6 +29,7 @@ export default function ActionButton({
     <button
       onClick={onClick}
       disabled={disabled}
+      aria-label={ariaLabel}
       className={`relative font-bold text-white rounded-[10px] gradient-button
         transition-all duration-200 ease-in-out
         min-w-[200px] h-[46px]

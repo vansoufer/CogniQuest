@@ -1,0 +1,17 @@
+{
+  "name": "CogniQuest - Assistente de Estudos com IA",
+  "short_name": "CogniQuest",
+  "description": "Assistente de estudos inteligente que usa IA para ajudar você a estudar, resolver questões, exercícios e problemas.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#04040a",
+  "theme_color": "#5f0dff",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+} 
