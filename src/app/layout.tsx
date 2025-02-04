@@ -15,7 +15,7 @@ import {
   faLink,
   faBook
 } from '@fortawesome/free-solid-svg-icons';
-import Analytics from '@/components/Analytics';
+import Analytics from '@/app/components/Analytics';
 
 library.add(
   faArrowLeft,
@@ -124,7 +124,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={quicksand.variable}>
       <head>
-       <meta 
+        <meta 
           name="google-site-verification" 
           content="qX3f6bfpsPruqhF2qtyOBlKr9qAFUb21t9uTxRf_nvE" 
         />
