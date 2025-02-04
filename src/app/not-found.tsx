@@ -10,11 +10,11 @@ export default function NotFound() {
           404
         </h1>
         <h2 className="text-white text-2xl font-normal mb-8">
-          Conteúdo não encontrado
+          Pagína não encontrada
         </h2>
         <Link 
           href="/"
-          className="inline-block gradient-button rounded-[10px] px-6 py-3 font-medium transition-all duration-200 hover:opacity-90 hover:scale-105"
+          className="inline-block gradient-button rounded-[10px] p-1 font-medium transition-all duration-200 hover:opacity-90 hover:scale-105"
         >
           <span className="flex items-center justify-center gap-2 rounded-[10px] bg-[#000000eb] w-full h-full px-4 py-2 hover:bg-[#000000d9]">
             Voltar para a página inicial
