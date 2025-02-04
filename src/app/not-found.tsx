@@ -10,7 +10,7 @@ export default function NotFound() {
           404
         </h1>
         <h2 className="text-white text-2xl font-normal mb-8">
-          Pagína não encontrada
+          Página não encontrada
         </h2>
         <Link 
           href="/"
