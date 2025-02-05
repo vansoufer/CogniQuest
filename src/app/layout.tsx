@@ -80,7 +80,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://cogniquest.vercel.app',
+    url: 'https://cogniquest.netlify.app',
     title: 'CogniQuest - Seu Assistente de Estudos com IA',
     description: 'Assistente de estudos inteligente que usa IA para ajudar você a estudar, resolver questões, exercícios e problemas. Perfeito para ENEM, vestibulares e concursos.',
     siteName: 'CogniQuest',
@@ -98,7 +98,7 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: 'https://cogniquest.vercel.app',
+    canonical: 'https://cogniquest.netlify.app',
   },
   icons: {
     icon: [
@@ -132,6 +132,8 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         />
+         <title>CogniQuest - Seu Assistente de Estudos com IA</title>
+         <link rel="icon" href="/favicon.svg" />
       </head>
       <body className="font-sans antialiased">
         <Analytics />
